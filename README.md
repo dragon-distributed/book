@@ -9,10 +9,10 @@
 [6. BFT Raft的理解 (Byzantine Fault Tolerant Raft)](https://github.com/dragon-distributed/book/blob/master/blockchain/6.BFTRaft的理解(Byzantine%20Fault%20Tolerance%20Raft).md)  
 [7. Monoxide的理解 - 区块链分片](https://github.com/dragon-distributed/book/blob/master/blockchain/7.Monoxide的理解-区块链分片.md)  
 
-## list - paper
+## list - Distributed
 
-[1. semi-passive replication](https://github.com/dragon-distributed/book/blob/master/paper/1.semi-passive%20replication.md)   
-[2. Dynamic Reconfiguration of Primary/Backup Clusters](https://github.com/dragon-distributed/book/blob/master/paper/2.Dynamic%20Reconfiguration%20of%20Primary:Backup%20Clusters.md)  
+[1. semi-passive replication](https://github.com/dragon-distributed/book/blob/master/distributed/1.semi-passive%20replication.md)   
+[2. Dynamic Reconfiguration of Primary/Backup Clusters](https://github.com/dragon-distributed/book/blob/master/distributed/2.Dynamic%20Reconfiguration%20of%20Primary:Backup%20Clusters.md)  
 
 ## list - storage
 
