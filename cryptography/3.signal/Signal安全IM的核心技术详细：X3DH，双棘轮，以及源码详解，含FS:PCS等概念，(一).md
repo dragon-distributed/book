@@ -35,7 +35,7 @@ ECDH就是基于椭圆曲线的Diffie Hellman。
 
 ### KDF
 
-KDF全称是key derivation function，我也就知道怎么翻译好。像上面说的DH出来的密钥，其实不是离散均匀的，更多情况下需要KDF或HKDF
+KDF全称是key derivation function，我也不知道怎么翻译好。像上面说的DH出来的密钥，其实不是离散均匀的，更多情况下需要KDF或HKDF
 
 ### HKDF
 
