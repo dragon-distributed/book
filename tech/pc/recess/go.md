@@ -52,6 +52,11 @@ code --install-extension flowtype.flow-for-vscode
 code->首选项->extensions，
 搜索dbaeumer.vscode-eslint，dzannotti.vscode-babel-coloring等等
 
+其它建议插件
+css-in-js
+Git supercharged
+
+
 ```
 
 
@@ -89,6 +94,8 @@ yarn install
 编写控件
 
 主要是这个控件需要实例倒数，以前可以用getElementById('id').innerText来修改，现在可以使用控件思想
+
+说明一下可以用setValue的方式进行
 
 所以主要知识点：
 1. 控件思想
@@ -130,6 +137,9 @@ yarn install
 
 ```
 1. no frame, main.dev.js. main windows add: frame: false,
+2. fullscreen, simpleFullScreen
+3. opacity
+4. alway on top关键点
 ```
 
 
@@ -151,3 +161,118 @@ mac https://iconhandbook.co.uk/reference/chart/osx/
 
 ## tray 菜单
 
+```
+1. tray_menu的编写
+2. open windows, 
+3. separator
+4. full screen的坑，要在close事件中设回full screan=false,不然一点图标就会全屏
+```
+
+# setting
+
+```
+问题1. 工程中的app.html与index.js是定位在relax windows的，如何处理？复制一份还是？
+-> 
+1. share global variables, 
+2. set title.
+3. UI.
+4. 保存,使用electron-store
+5. 改写config类
+6. 改写setting页面
+7. 处理start at login
+```
+
+# 定时relax
+
+```
+1. 主进程的relax_timer编写
+2. 打开窗口时stop，关闭时start
+3. 每次都要重启relax
+```
+
+
+
+# 优化
+
+## 自定义菜单
+
+```
+1. menubar
+2. 编写菜单，先不管事件
+   先讲功能，想做到什么
+   讲讲如何设置，因为menu有倒数，main process也有倒数
+   再讲讲如何避免slider的变动
+1. ipc处理
+2. Main process发送到manu web content的办法
+3. config在两个process中，如果做内存缓存，会失效
+4. 加速打开: preloadWindow: true
+```
+
+## notification
+
+```
+1. 添加notification
+```
+
+## 多屏幕
+
+## 图标
+
+## 动态 tray
+
+```
+1. 引入chartjs
+2. 写chartjs脚本
+3. 处理webPreferences中的backgroundThrottling，然后window.hide之后,canvas不刷新
+```
+
+## 喝水
+
+```
+1. material-ui, css: &:hover, 基css
+2. 外部react体系
+```
+
+
+# 打包 
+
+```
+1. 修改package.json，修改名字,包括最开始，还有build属性，author属性等
+2. mac下需要 CSC_IDENTITY_AUTO_DISCOVERY=false yarn package
+3. 
+```
+
+
+
+# windows
+
+```
+1 window-all-closed 在windows下需要注释
+添加
+app.on('window-all-closed', e => e.preventDefault());
+
+
+
+```
+
+
+
+
+
+
+
+
+# book structure
+
+1. 介绍自己，以及课程、工程等
+2. js历史, v8引擎(js以前写前台，表单验证等)
+3. electron介绍以及原理
+4. 开发准备
+5. 最简单的demo
+6. 介绍主进程
+7. 主进程demo
+8. 介绍渲染线程
+9. 渲染线程demo
+10. 介绍react + matrial ui
+11. 实践，实际例子
+12. 
