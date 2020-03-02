@@ -17,7 +17,7 @@
 
 ## list - cryptography
 
-[1. proxy re-encryption](https://github.com/dragon-distributed/book/blob/master/cryptography/1.proxy%20re-encryption.md)
+[1. proxy re-encryption](https://github.com/dragon-distributed/book/blob/master/cryptography/1.proxy%20re-encryption.md)  
 [2. DH Tree](https://github.com/dragon-distributed/book/blob/master/cryptography/2.DH%20Tree.md)  
 [3. Signal安全IM的核心技术详细：X3DH，双棘轮，以及源码详解，含FS/PCS等概念](https://github.com/dragon-distributed/book/blob/master/cryptography/3.signal/Signal安全IM的核心技术详细：X3DH，双棘轮，以及源码详解，含FS:PCS等概念，(一).md)  
 [4. 双棘轮算法：端对端加密安全协议，原理以及流程详解](https://github.com/dragon-distributed/book/blob/master/cryptography/3.signal/双棘轮算法：端对端加密安全协议，原理以及流程详解.md)  
